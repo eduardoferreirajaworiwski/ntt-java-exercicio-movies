@@ -70,7 +70,6 @@ public class UserFacade {
         UserModel user = new UserModel();
         user.setUsername(userDTO.getUsername());
         user.setPassword(userDTO.getPassword());
-        // Adicione aqui outros campos do DTO para serem convertidos para a entidade UserModel
         return user;
     }
 
@@ -79,7 +78,6 @@ public class UserFacade {
         userDTO.setId(user.getId());
         userDTO.setUsername(user.getUsername());
         userDTO.setPassword(user.getPassword());
-        // Adicione aqui outros campos da entidade UserModel para serem convertidos para o DTO
         return userDTO;
     }
 }
